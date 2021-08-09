@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apnikaksha</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../html_/images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../html_/images/favicon_io//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../html_/images/favicon_io//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        color: lightseagreen;
+        font: caption;
+      }
+      .navigations {
+        display: flex;
+        justify-content: space-around;
+        background: #ffeaa7;
+        height: 30px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      #a:hover {
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      #a {
+        letter-spacing: 3px;
+        padding: 10px;
+        text-decoration: none;
+    
+      }
+      .banner {
+        background-image: url(../html_/images/friends.jpg);
+        height: 200px;
+        /* min-height: 100px; */
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+      }
+      header {
+        background-color: black;
+      }
+      #flex-left {
+        margin-left: auto;
+      }
+      section h2 span {
+        padding: 15px;
+        position: relative; top: 40px;
+        color: aliceblue;
+        text-shadow: 5px;
+        background: linear-gradient(to left,rgb(197, 197, 29),rgb(228, 135, 150));
+        border-color: rgb(117, 35, 35);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+      }
+      #course {
+        padding: 10px 55px;
+        margin: 10px;
+        width: 100%;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+      .carousel-cell {
+        width: 40%;
+        height: 400px;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+      }
+      .flex-container{
+        position: relative;top: 50px;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        border: 5px rgb(253, 155, 89);
+        flex-wrap:wrap; 
+        /* justify-content:center;
+        align-items: center; */
+        flex-direction: row;
+        margin: 10 -15px;
+      }
+      .flex-item{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(42, 165, 104);
+        border: 2px solid rgb(6, 82, 182);
+        text-align: center;
+        font-size: 20px;
+        color: azure;
+        font-weight: bold;
+        line-height: 1.4;
+        margin: 0 20px;
+        }
+
+      @media screen and (max-width: 700px) {
+        nav {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner"></div>
+      <!-- <h1>Apni Kaksha</h1> -->
+    </header>
+    <nav class="navigations">
+      <a id="a" href="#">Home </a>
+      <a id="a" href="#">characters</a>
+      <a id="a" href="#">iconic moments</a>
+      <a id="a" href="#"> show review </a>
+      <a id="a" href="#">surprise</a>
+      <a id="flex-left" href="#"> login/ogout</a>
+    </nav>
+    <main>
+      <section>
+        <!-- <h2><span>HOW YOU DOIN??</span></h2> -->
+        <marquee
+          direction="right"
+          behavior="alternate"
+          style="
+            background: rgb(174, 255, 98);
+            border: rgb(36, 179, 24) 3px SOLID;
+            border-radius: 5px;
+          "
+          id="course"
+        >
+          ...........!!!HOW YOU DOIN??!!!..........
+        </marquee>
+        <!-- <h1>Flickity - wrapAround</h1> -->
+
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell">
+            <img
+              src="../html_/images/gif and images/giphy 5.gif"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-cell">
+            <img
+              src="../html_/images/gif and images/giphy 4.gif"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-cell">
+            <img src="../html_/images/gif and images/giphy6.gif" width="100%" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../html_/images/gif and images/giphy2.gif" width="100%" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../html_/images/gif and images/giphy3.gif" width="100%" />
+          </div>
+          <div class="carousel-cell">
+            <img
+              src="../html_/images/gif and images/giphy 8.gif"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-cell">
+            <img
+              src="../html_/images/gif and images/joey_19.gif"
+              width="100%"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 style="text-align: center;"><span>FRIENDS ALL SEASONS</span></h2>
+        <div class="flex-container">
+          <a class="flex-item" id='flex-item1' target="_blank" href="../html_/images/friend all seasons/season7/Friends.[S07E01].WEBRip.@netflixonline.mkv">season 7</a>
+          <div class="flex-item" id='flex-item2'>SEASON2</div>
+          <div class="flex-item" id='flex-item3'>SEASON3</div>
+          <div class="flex-item" id='flex-item4'>SEASON4</div>
+          <div class="flex-item" id='flex-item5'>SEASON5</div>
+          <div class="flex-item" id='flex-item6'>SEASON6</div>
+          <div class="flex-item" id='flex-item7'>SEASON7<video></video></div>
+          <div class="flex-item" id='flex-item8'>SEASON8</div>
+          <div class="flex-item" id='flex-item9'>SEASON9</div>
+          <div class="flex-item" id='flex-item10'>SEASON10</div>
+        <!-- <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/kfEJsL2ETik"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe> -->
+      </section>
+      <section>
+        <h2>Studt material</h2>
+        <a
+          target="_blank"
+          href="operating_system/Bedtime Stories on Operating Systems.pdf Stories on Operating Systems.pdf"
+          >bedtime_operating system</a
+        >
+
+        <a target="_blank" href="operating_system/masterstheorem.pdf"
+          >masterstheorem</a
+        >
+
+        <a target="_blank" href="operating_system/operating system.pdf"
+          >galvin</a
+        >
+      </section>
+      <section>
+        <h2>Our founder</h2>
+        <h3>Pramod yadav</h3>
+        <img src="download.jpg" alt="I am pramod yadav" />
+        <a target="_blank" href="https://www.facebook.com/">youtube</a>
+        <a
+          target="_blank"
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+          >gmail</a
+        >
+        <h4>
+          hi this is pramod yadav i am an programer enthusiast and i love
+          problrm solving and programming
+        </h4>
+        <footer>
+          <a target="_blank" href="">guidence</a>
+          <a target="_blank" href="">nothing</a>
+        </footer>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      </section>
+    </main>
+  </body>
+</html>
